@@ -1,0 +1,36 @@
+site_name: 技术文档
+site_url: https://tangnewstar.github.io/
+repo_url: https://github.com/tangnewstar/tangnewstar.github.io
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 数据库: database/index.md
