@@ -38,3 +38,9 @@ nav:
       - MySQL:
           - 概览: database/mysql/index.md
           - 架构总览: database/mysql/mysql-architecture.md
+          - 存储引擎:
+              - 概览: database/mysql/storage-engine/index.md
+              - InnoDB Overview: database/mysql/storage-engine/innodb-overview.md
+              - InnoDB Architecture: database/mysql/storage-engine/innodb-architecture.md
+              - In-Memory Structures: database/mysql/storage-engine/innodb-in-memory-structures.md
+              - Multi-Versioning: database/mysql/storage-engine/innodb-multi-versioning.md
