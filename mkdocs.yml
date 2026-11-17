@@ -9,6 +9,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.indexes
     - content.code.copy
   palette:
     - scheme: default
@@ -44,3 +45,9 @@ nav:
               - InnoDB Architecture: database/mysql/storage-engine/innodb-architecture.md
               - In-Memory Structures: database/mysql/storage-engine/innodb-in-memory-structures.md
               - Multi-Versioning: database/mysql/storage-engine/innodb-multi-versioning.md
+          - 日志:
+              - 概览: database/mysql/logs/index.md
+              - Binary Log: database/mysql/logs/binary-log.md
+              - Server Logs: database/mysql/logs/server-logs.md
+              - Redo Log: database/mysql/logs/redo-log.md
+              - Undo Log: database/mysql/logs/undo-log.md
