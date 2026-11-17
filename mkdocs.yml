@@ -33,4 +33,6 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 数据库: database/index.md
+  - 数据库:
+      - 概览: database/index.md
+      - MySQL: database/mysql/index.md
