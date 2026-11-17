@@ -35,4 +35,6 @@ nav:
   - 首页: index.md
   - 数据库:
       - 概览: database/index.md
-      - MySQL: database/mysql/index.md
+      - MySQL:
+          - 概览: database/mysql/index.md
+          - 架构总览: database/mysql/mysql-architecture.md
