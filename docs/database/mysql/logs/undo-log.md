@@ -8,7 +8,7 @@ An undo log is a collection of undo log records associated with a single read-wr
 
 If another transaction needs to see the original data as part of a consistent read operation, the unmodified data is retrieved from undo log records.
 
-> *see also [consistent read](https://app.notion.com/p/consistent-read-6428623ca9758338a6ff81198807d3e4?pvs=21)*
+> *see also [consistent read](../terms/consistent-read.md)*
 
 Undo logs exist within [undo log segments](https://dev.mysql.com/doc/refman/8.0/en/glossary.html#glos_undo_log_segment), which are contained within [rollback segments](https://dev.mysql.com/doc/refman/8.0/en/glossary.html#glos_rollback_segment). Rollback segments reside in [undo tablespaces](https://dev.mysql.com/doc/refman/8.0/en/glossary.html#glos_undo_tablespace) and in the [global temporary tablespace](https://dev.mysql.com/doc/refman/8.0/en/glossary.html#glos_global_temporary_tablespace).
 

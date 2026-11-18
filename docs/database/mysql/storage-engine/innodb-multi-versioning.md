@@ -6,7 +6,7 @@ title: InnoDB Multi-Versioning
 
 `InnoDB` is a multi-version storage engine. It keeps information about old versions of changed rows to support transactional features such as concurrency and rollback. This information is stored in undo tablespaces in a data structure called a rollback segment.
 
-`InnoDB` uses the information in the rollback segment to perform the undo operations needed in a transaction rollback. It also uses the information to build earlier versions of a row for a consistent read. [consistent read](https://app.notion.com/p/consistent-read-6428623ca9758338a6ff81198807d3e4?pvs=21)
+`InnoDB` uses the information in the rollback segment to perform the undo operations needed in a transaction rollback. It also uses the information to build earlier versions of a row for a consistent read. [consistent read](../terms/consistent-read.md)
 
 !!! note "提示"
     InnoDB是多版本存储引擎。保有修改行的旧版本信息，以支持事务特性例如并发和回滚。

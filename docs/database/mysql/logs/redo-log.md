@@ -10,7 +10,7 @@ During normal operations, the redo log encodes requests to change table data tha
 
 Modifications that did not finish updating data files before an unexpected shutdown are replayed automatically during initialization and before connections are accepted.
 
-The redo log is physically represented on disk by redo log files. Data that is written to redo log files is encoded in terms of records affected, and this data is collectively referred to as redo. The passage of data through redo log files is represented by an ever-increasing [LSN](https://dev.mysql.com/doc/refman/8.0/en/glossary.html#glos_lsn) value. Redo log data is appended as data modifications occur, and the oldest data is truncated as the checkpoint progresses.
+The redo log is physically represented on disk by redo log files. Data that is written to redo log files is encoded in terms of records affected, and this data is collectively referred to as redo. The passage of data through redo log files is represented by an ever-increasing [LSN](../terms/lsn.md) value. Redo log data is appended as data modifications occur, and the oldest data is truncated as the checkpoint progresses.
 
 !!! note "提示"
     redo log 是由物理磁盘的redo log文件表示
