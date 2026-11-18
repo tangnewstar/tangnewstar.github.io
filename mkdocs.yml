@@ -63,7 +63,15 @@ nav:
               - mysql index Cardinality: database/mysql/index-structure/index-cardinality.md
               - 番外篇：索引长度计算: database/mysql/index-structure/bonus-index-key-len.md
               - 番外篇：页分裂: database/mysql/index-structure/bonus-page-split.md
-              - 番外篇：悬挂事务: database/mysql/index-structure/bonus-dangling-transaction.md
+          - 事务:
+              - 概览: database/mysql/transaction/index.md
+              - 番外篇：悬挂事务: database/mysql/transaction/bonus-dangling-transaction.md
+          - 并发控制:
+              - 概览: database/mysql/concurrency/index.md
+              - 事务隔离级别与示例: database/mysql/concurrency/transaction-isolation.md
+              - 多事务并发: database/mysql/concurrency/multi-transaction-concurrency.md
+              - MVCC & ReadView: database/mysql/concurrency/mvcc-readview.md
+              - 当前读与快照读: database/mysql/concurrency/current-read-snapshot-read.md
           - 高可用与集群:
               - 概览: database/mysql/high-availability/index.md
               - MySQL 主从复制: database/mysql/high-availability/master-slave-replication.md
