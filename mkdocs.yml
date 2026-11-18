@@ -68,10 +68,12 @@ nav:
               - 番外篇：悬挂事务: database/mysql/transaction/bonus-dangling-transaction.md
           - 并发控制:
               - 概览: database/mysql/concurrency/index.md
-              - 事务隔离级别与示例: database/mysql/concurrency/transaction-isolation.md
+              - 事务隔离级别: database/mysql/concurrency/transaction-isolation.md
               - 多事务并发: database/mysql/concurrency/multi-transaction-concurrency.md
               - MVCC & ReadView: database/mysql/concurrency/mvcc-readview.md
               - 当前读与快照读: database/mysql/concurrency/current-read-snapshot-read.md
+              - 示例：RC 只锁修改的行: database/mysql/concurrency/example-rc-locks.md
+              - 示例：分析不同的隔离级别: database/mysql/concurrency/example-isolation-levels.md
           - 高可用与集群:
               - 概览: database/mysql/high-availability/index.md
               - MySQL 主从复制: database/mysql/high-availability/master-slave-replication.md
