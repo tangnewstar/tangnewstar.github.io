@@ -60,8 +60,10 @@ nav:
               - 概览: database/mysql/index-structure/index.md
               - 索引数据结构: database/mysql/index-structure/index-data-structure.md
               - 索引设计原则与失效场景: database/mysql/index-structure/index-design.md
+              - mysql index Cardinality: database/mysql/index-structure/index-cardinality.md
               - 番外篇：索引长度计算: database/mysql/index-structure/bonus-index-key-len.md
               - 番外篇：页分裂: database/mysql/index-structure/bonus-page-split.md
+              - 番外篇：悬挂事务: database/mysql/index-structure/bonus-dangling-transaction.md
           - 高可用与集群:
               - 概览: database/mysql/high-availability/index.md
               - MySQL 主从复制: database/mysql/high-availability/master-slave-replication.md
