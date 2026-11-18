@@ -56,3 +56,11 @@ nav:
               - Checkpoint: database/mysql/terms/checkpoint.md
               - LSN: database/mysql/terms/lsn.md
               - Consistent Read: database/mysql/terms/consistent-read.md
+          - 索引:
+              - 概览: database/mysql/index-structure/index.md
+              - 索引数据结构: database/mysql/index-structure/index-data-structure.md
+              - 索引失效的常见情况: database/mysql/index-structure/index-invalidation.md
+              - 页分裂: database/mysql/index-structure/page-split.md
+          - 高可用与集群:
+              - 概览: database/mysql/high-availability/index.md
+              - MySQL 主从复制: database/mysql/high-availability/master-slave-replication.md
