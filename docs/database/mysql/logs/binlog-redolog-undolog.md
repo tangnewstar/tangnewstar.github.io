@@ -81,6 +81,8 @@ binlog是随机写入的，而redolog是顺序写入的。
 
 **1、首先准备一张原始数据表**
 
+![原始数据表](https://pic4.zhimg.com/v2-4cf022f3cf13d09a7a3a6d6346bbd18f_1440w.png)
+
 **2、开启一个事务A：** 对user_info表执行 update user_info set name =“李四”where id=1 会进行如下流程操作
 
 1. 首先获得一个事务编号 104
@@ -89,6 +91,8 @@ binlog是随机写入的，而redolog是顺序写入的。
 4. 把修改后的数据事务版本号改成 当前事务版本号，并把DB_ROLL_PTR 地址指向undo log数据地址。
 
 **3、最后执行完结果**
+
+![undo log 记录结果](https://pic1.zhimg.com/v2-465a2cab930378790017b5bc8ed24b3a_1440w.png)
 
 ### redo、undo、binlog 的生成流程与崩溃恢复
 
@@ -105,6 +109,8 @@ binlog是随机写入的，而redolog是顺序写入的。
 **5、记录binlog**
 
 **6、提交事务，写入redo log (commit状态)**
+
+![三种日志生成流程与崩溃恢复](https://pic4.zhimg.com/v2-346d0dcc7b5e7a3295357e099ad54f7b_1440w.jpg)
 
 **1、在第一步、第二步、第三步执行时数据库崩溃：** 因为这个时候数据还没有发生任何变化，所以没有任何影响，不需要做任何操作。
 
