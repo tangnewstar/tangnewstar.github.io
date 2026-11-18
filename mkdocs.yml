@@ -71,7 +71,6 @@ nav:
               - 事务隔离级别: database/mysql/concurrency/transaction-isolation.md
               - 多事务并发: database/mysql/concurrency/multi-transaction-concurrency.md
               - MVCC & ReadView: database/mysql/concurrency/mvcc-readview.md
-              - 当前读与快照读: database/mysql/concurrency/current-read-snapshot-read.md
               - 示例：RC 只锁修改的行: database/mysql/concurrency/example-rc-locks.md
               - 示例：分析不同的隔离级别: database/mysql/concurrency/example-isolation-levels.md
           - 高可用与集群:
