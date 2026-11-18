@@ -10,4 +10,3 @@ MySQL 索引相关的内容，包括底层数据结构、设计原则与索引�
 
 - [番外篇：索引长度计算](bonus-index-key-len.md)
 - [番外篇：页分裂](bonus-page-split.md)
-- [番外篇：悬挂事务](bonus-dangling-transaction.md)
