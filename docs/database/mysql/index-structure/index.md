@@ -1,7 +1,11 @@
 # 索引
 
-MySQL 索引相关的内容，包括底层数据结构、索引失效场景与页分裂原理。
+MySQL 索引相关的内容，包括底层数据结构、设计原则与索引失效场景。
 
 - [索引数据结构](index-data-structure.md)
-- [索引失效的常见情况](index-invalidation.md)
-- [页分裂](page-split.md)
+- [索引设计原则与失效场景](index-design.md)
+
+### 番外篇
+
+- [番外篇：索引长度计算](bonus-index-key-len.md)
+- [番外篇：页分裂](bonus-page-split.md)
