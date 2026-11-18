@@ -47,10 +47,8 @@ nav:
               - Multi-Versioning: database/mysql/storage-engine/innodb-multi-versioning.md
           - 日志:
               - 概览: database/mysql/logs/index.md
-              - 日志图示: database/mysql/logs/log-illustration.md
+              - MySQL 日志详解: database/mysql/logs/mysql-logs-overview.md
               - Binary Log: database/mysql/logs/binary-log.md
-              - Server Logs: database/mysql/logs/server-logs.md
-              - 三种日志对比: database/mysql/logs/binlog-redolog-undolog.md
               - Redo Log: database/mysql/logs/redo-log.md
               - Undo Log: database/mysql/logs/undo-log.md
           - Terms:
