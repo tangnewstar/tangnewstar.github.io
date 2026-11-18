@@ -53,3 +53,8 @@ nav:
               - 三种日志对比: database/mysql/logs/binlog-redolog-undolog.md
               - Redo Log: database/mysql/logs/redo-log.md
               - Undo Log: database/mysql/logs/undo-log.md
+          - Terms:
+              - 概览: database/mysql/terms/index.md
+              - Checkpoint: database/mysql/terms/checkpoint.md
+              - LSN: database/mysql/terms/lsn.md
+              - Consistent Read: database/mysql/terms/consistent-read.md
