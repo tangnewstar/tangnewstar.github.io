@@ -68,6 +68,10 @@ nav:
               - 优化器: database/mysql/query-optimization/optimizer.md
               - 执行计划: database/mysql/query-optimization/execution-plan.md
               - 番外篇：index Cardinality: database/mysql/query-optimization/bonus-cardinality.md
+          - 连接与线程管理:
+              - 概览: database/mysql/connection-management/index.md
+              - 连接池: database/mysql/connection-management/connection-pool.md
+              - Thread Handler: database/mysql/connection-management/thread-handler.md
           - 事务:
               - 概览: database/mysql/transaction/index.md
               - ACID 实现原理: database/mysql/transaction/acid.md
