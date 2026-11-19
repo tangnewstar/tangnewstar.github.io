@@ -1,8 +1,8 @@
 ---
-title: mysql index Cardinality
+title: 番外篇：index Cardinality
 ---
 
-# mysql index Cardinality
+# 番外篇：index Cardinality
 
 ### 介绍 mysql index cardinality
 

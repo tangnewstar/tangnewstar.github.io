@@ -59,10 +59,12 @@ nav:
           - 索引:
               - 概览: database/mysql/index-structure/index.md
               - 索引数据结构: database/mysql/index-structure/index-data-structure.md
-              - 索引设计原则与失效场景: database/mysql/index-structure/index-design.md
-              - mysql index Cardinality: database/mysql/index-structure/index-cardinality.md
+              - 索引设计: database/mysql/index-structure/index-design.md
               - 番外篇：索引长度计算: database/mysql/index-structure/bonus-index-key-len.md
               - 番外篇：页分裂: database/mysql/index-structure/bonus-page-split.md
+          - 查询解析与优化:
+              - 概览: database/mysql/query-optimization/index.md
+              - 番外篇：index Cardinality: database/mysql/query-optimization/bonus-cardinality.md
           - 事务:
               - 概览: database/mysql/transaction/index.md
               - ACID 实现原理: database/mysql/transaction/acid.md

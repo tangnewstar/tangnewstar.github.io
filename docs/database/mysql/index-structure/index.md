@@ -1,10 +1,9 @@
 # 索引
 
-MySQL 索引相关的内容，包括底层数据结构、设计原则与索引失效场景。
+MySQL 索引相关的内容，包括底层数据结构与索引设计。
 
 - [索引数据结构](index-data-structure.md)
-- [索引设计原则与失效场景](index-design.md)
-- [mysql index Cardinality](index-cardinality.md)
+- [索引设计](index-design.md)
 
 ### 番外篇
 
