@@ -64,6 +64,9 @@ nav:
               - 番外篇：页分裂: database/mysql/index-structure/bonus-page-split.md
           - 查询解析与优化:
               - 概览: database/mysql/query-optimization/index.md
+              - 查询解析器: database/mysql/query-optimization/query-parser.md
+              - 优化器: database/mysql/query-optimization/optimizer.md
+              - 执行计划: database/mysql/query-optimization/execution-plan.md
               - 番外篇：index Cardinality: database/mysql/query-optimization/bonus-cardinality.md
           - 事务:
               - 概览: database/mysql/transaction/index.md
