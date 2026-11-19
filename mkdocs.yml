@@ -49,6 +49,13 @@ nav:
               - 优化器: database/mysql/query-optimization/optimizer.md
               - 执行计划: database/mysql/query-optimization/execution-plan.md
               - 番外篇：index Cardinality: database/mysql/query-optimization/bonus-cardinality.md
+          - 存储引擎:
+              - 概览: database/mysql/storage-engine/index.md
+              - InnoDB Overview: database/mysql/storage-engine/innodb-overview.md
+              - InnoDB Architecture: database/mysql/storage-engine/innodb-architecture.md
+              - In-Memory Structures: database/mysql/storage-engine/innodb-in-memory-structures.md
+              - Multi-Versioning: database/mysql/storage-engine/innodb-multi-versioning.md
+              - MyISAM: database/mysql/storage-engine/myisam.md
           - 索引:
               - 概览: database/mysql/index-structure/index.md
               - 索引数据结构: database/mysql/index-structure/index-data-structure.md
@@ -67,13 +74,6 @@ nav:
               - 锁机制: database/mysql/concurrency/locking.md
               - 示例：RC 只锁修改的行: database/mysql/concurrency/example-rc-locks.md
               - 示例：分析不同的隔离级别: database/mysql/concurrency/example-isolation-levels.md
-          - 存储引擎:
-              - 概览: database/mysql/storage-engine/index.md
-              - InnoDB Overview: database/mysql/storage-engine/innodb-overview.md
-              - InnoDB Architecture: database/mysql/storage-engine/innodb-architecture.md
-              - In-Memory Structures: database/mysql/storage-engine/innodb-in-memory-structures.md
-              - Multi-Versioning: database/mysql/storage-engine/innodb-multi-versioning.md
-              - MyISAM: database/mysql/storage-engine/myisam.md
           - 日志:
               - 概览: database/mysql/logs/index.md
               - MySQL 日志详解: database/mysql/logs/mysql-logs-overview.md
