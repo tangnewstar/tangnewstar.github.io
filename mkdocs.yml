@@ -201,7 +201,7 @@ nav:
       - 概览: microservices/index.md
       - Spring:
           - 概览: microservices/spring/index.md
-          - @EnableConfiguration: microservices/spring/enable-configuration.md
+          - "@EnableConfiguration": microservices/spring/enable-configuration.md
           - Spring AOP: microservices/spring/spring-aop.md
           - Spring Bean: microservices/spring/spring-bean.md
           - Spring Bean 扫描: microservices/spring/spring-bean-scanning.md
