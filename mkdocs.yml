@@ -89,3 +89,125 @@ nav:
               - 概览: database/mysql/high-availability/index.md
               - MySQL 主从复制: database/mysql/high-availability/master-slave-replication.md
               - MGR、InnoDB Cluster 与自动切换: database/mysql/high-availability/mgr-innodb-cluster.md
+  - 编程语言与运行时:
+      - 概览: programming/index.md
+      - Java 基础:
+          - 概览: programming/java-basic/index.md
+          - Java 核心机制:
+              - 概览: programming/java-basic/core-mechanisms/index.md
+              - JVM 内存布局及垃圾回收机制: programming/java-basic/core-mechanisms/jvm-memory-gc.md
+              - JVM 内存分布: programming/java-basic/core-mechanisms/jvm-memory-layout.md
+              - GC: programming/java-basic/core-mechanisms/gc.md
+              - CMS & G1: programming/java-basic/core-mechanisms/cms-g1.md
+              - hashCode and equals: programming/java-basic/core-mechanisms/hashcode-equals.md
+              - Java 数据结构 → HashMap:
+                  - 概览: programming/java-basic/core-mechanisms/hash-map/index.md
+                  - ConcurrentHashMap 线程安全: programming/java-basic/core-mechanisms/hash-map/concurrent-hashmap.md
+                  - HashMap 底层原理: programming/java-basic/core-mechanisms/hash-map/hashmap-underlying.md
+                  - HashMap 源码深度分析: programming/java-basic/core-mechanisms/hash-map/hashmap-source-analysis.md
+              - Lock: programming/java-basic/core-mechanisms/lock.md
+      - Java 进阶:
+          - 概览: programming/java-advanced/index.md
+          - 多线程并发:
+              - 概览: programming/java-advanced/concurrency/index.md
+              - CompletableFuture: programming/java-advanced/concurrency/completable-future.md
+              - JMM happens-before: programming/java-advanced/concurrency/jmm-happens-before.md
+              - JMM 的可见性与原子性: programming/java-advanced/concurrency/jmm-visibility-atomicity.md
+              - Lock and synchronization:
+                  - 概览: programming/java-advanced/concurrency/lock-sync/index.md
+                  - Executor: programming/java-advanced/concurrency/lock-sync/executor.md
+                  - atomic: programming/java-advanced/concurrency/lock-sync/atomic.md
+                  - lock:
+                      - 概览: programming/java-advanced/concurrency/lock-sync/lock/index.md
+                      - AQS: programming/java-advanced/concurrency/lock-sync/lock/aqs.md
+                      - AQS 代码注释: programming/java-advanced/concurrency/lock-sync/lock/aqs-code-notes.md
+              - Thread Pool:
+                  - 概览: programming/java-advanced/concurrency/thread-pool/index.md
+                  - Context Switch: programming/java-advanced/concurrency/thread-pool/context-switch.md
+                  - Java 原生可配置线程池和 Spring 的可配置线程池实现的比较: programming/java-advanced/concurrency/thread-pool/threadpool-comparison.md
+                  - Thread: programming/java-advanced/concurrency/thread-pool/thread.md
+                  - ThreadPoolExecutor: programming/java-advanced/concurrency/thread-pool/thread-pool-executor.md
+                  - fork join:
+                      - 概览: programming/java-advanced/concurrency/thread-pool/fork-join/index.md
+                      - work-stealing 工作窃取算法: programming/java-advanced/concurrency/thread-pool/fork-join/work-stealing.md
+                      - 分治法: programming/java-advanced/concurrency/thread-pool/fork-join/divide-conquer.md
+                  - thread pool blocking queue: programming/java-advanced/concurrency/thread-pool/blocking-queue.md
+                  - 线程分配回收策略: programming/java-advanced/concurrency/thread-pool/thread-lifecycle.md
+          - 组件与框架:
+              - 概览: programming/java-advanced/frameworks/index.md
+              - OkHttp: programming/java-advanced/frameworks/okhttp.md
+              - mybatis:
+                  - 概览: programming/java-advanced/frameworks/mybatis/index.md
+                  - mybatis 生成数据库 ID: programming/java-advanced/frameworks/mybatis/generate-db-id.md
+              - mybatis执行: programming/java-advanced/frameworks/mybatis-execution.md
+              - 通用日志框架设计: programming/java-advanced/frameworks/logging-design.md
+  - 操作系统与底层:
+      - 概览: os/index.md
+      - Linux: os/linux/server-process-thread-model.md
+      - IO: os/io/linux-io-socket.md
+  - 网络基础:
+      - 概览: network/index.md
+      - 协议栈:
+          - 概览: network/protocol-stack/index.md
+          - Network: network/protocol-stack/network.md
+          - TCP 协议的粘包拆包: network/protocol-stack/tcp-sticky-package.md
+          - Web Socket: network/protocol-stack/websocket.md
+          - HTTP: network/protocol-stack/http.md
+          - java.net package: network/protocol-stack/java-net-package.md
+      - Web Server:
+          - 概览: network/web-server/index.md
+          - Servlet: network/web-server/servlet.md
+          - Tomcat: network/web-server/tomcat.md
+      - 服务通信框架:
+          - 概览: network/service-framework/index.md
+          - Netty:
+              - 概览: network/service-framework/netty/index.md
+              - 核心概念: network/service-framework/netty/core-concepts.md
+          - Dubbo:
+              - 概览: network/service-framework/dubbo/index.md
+              - Dubbo 负载均衡和容错: network/service-framework/dubbo/load-balancing-fault-tolerance.md
+              - Dubbo 的 SPI 思想: network/service-framework/dubbo/spi-thought.md
+  - 中间件:
+      - 概览: middleware/index.md
+      - 消息队列:
+          - 概览: middleware/message-queue/index.md
+          - MQ 设计哲学:
+              - 概览: middleware/message-queue/design-philosophy/index.md
+              - 消息重复消费: middleware/message-queue/design-philosophy/duplicate-consumption.md
+              - 顺序消费: middleware/message-queue/design-philosophy/ordered-consumption.md
+              - 高可用保证: middleware/message-queue/design-philosophy/high-availability.md
+          - MQ → Kafka: middleware/message-queue/kafka.md
+          - MQ → 消费端幂等: middleware/message-queue/consumer-idempotence.md
+          - MQ → 问答 → 消息不丢失:
+              - 概览: middleware/message-queue/message-loss/index.md
+              - MQ → 工程场景 → 消息丢失: middleware/message-queue/message-loss/details.md
+          - MQ 场景 - 消息积压: middleware/message-queue/message-backlog.md
+      - 缓存:
+          - 概览: middleware/cache/index.md
+          - Redis:
+              - 概览: middleware/cache/redis/index.md
+              - 数据类型: middleware/cache/redis/data-types.md
+              - 持久化: middleware/cache/redis/persistence.md
+              - 分布式锁实现: middleware/cache/redis/distributed-lock.md
+              - Sentinel 模式 vs 集群模式: middleware/cache/redis/sentinel-vs-cluster.md
+          - 缓存穿透: middleware/cache/cache-penetration.md
+  - 分布式系统理论:
+      - 概览: distributed/index.md
+      - 分布式共识算法: distributed/consensus-algorithm.md
+      - 分布式事务: distributed/transaction.md
+      - 分布式系统设计原则: distributed/design-principles.md
+      - 分布式唯一 ID: distributed/unique-id.md
+  - 微服务架构:
+      - 概览: microservices/index.md
+      - Spring:
+          - 概览: microservices/spring/index.md
+          - @EnableConfiguration: microservices/spring/enable-configuration.md
+          - Spring AOP: microservices/spring/spring-aop.md
+          - Spring Bean: microservices/spring/spring-bean.md
+          - Spring Bean 扫描: microservices/spring/spring-bean-scanning.md
+          - Spring Transactional: microservices/spring/spring-transactional.md
+          - SpringApplication 如何运行: microservices/spring/spring-application-startup.md
+          - Spring 自动配置机制: microservices/spring/auto-configuration.md
+      - 远程调用: microservices/remote-call.md
+      - 服务发现与负载均衡: microservices/service-discovery.md
+      - 熔断限流与降级: microservices/circuit-breaking.md
