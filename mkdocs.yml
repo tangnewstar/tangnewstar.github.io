@@ -28,7 +28,11 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
 
@@ -91,56 +95,42 @@ nav:
               - MGR、InnoDB Cluster 与自动切换: database/mysql/high-availability/mgr-innodb-cluster.md
   - 编程语言与运行时:
       - 概览: programming/index.md
-      - Java 基础:
-          - 概览: programming/java-basic/index.md
-          - Java 核心机制:
-              - 概览: programming/java-basic/core-mechanisms/index.md
-              - JVM 内存布局及垃圾回收机制: programming/java-basic/core-mechanisms/jvm-memory-gc.md
-              - JVM 内存分布: programming/java-basic/core-mechanisms/jvm-memory-layout.md
-              - GC: programming/java-basic/core-mechanisms/gc.md
-              - CMS & G1: programming/java-basic/core-mechanisms/cms-g1.md
-              - hashCode and equals: programming/java-basic/core-mechanisms/hashcode-equals.md
-              - Java 数据结构 → HashMap:
-                  - 概览: programming/java-basic/core-mechanisms/hash-map/index.md
-                  - ConcurrentHashMap 线程安全: programming/java-basic/core-mechanisms/hash-map/concurrent-hashmap.md
-                  - HashMap 底层原理: programming/java-basic/core-mechanisms/hash-map/hashmap-underlying.md
-                  - HashMap 源码深度分析: programming/java-basic/core-mechanisms/hash-map/hashmap-source-analysis.md
-              - Lock: programming/java-basic/core-mechanisms/lock.md
-      - Java 进阶:
-          - 概览: programming/java-advanced/index.md
-          - 多线程并发:
-              - 概览: programming/java-advanced/concurrency/index.md
-              - CompletableFuture: programming/java-advanced/concurrency/completable-future.md
-              - JMM happens-before: programming/java-advanced/concurrency/jmm-happens-before.md
-              - JMM 的可见性与原子性: programming/java-advanced/concurrency/jmm-visibility-atomicity.md
-              - Lock and synchronization:
-                  - 概览: programming/java-advanced/concurrency/lock-sync/index.md
-                  - Executor: programming/java-advanced/concurrency/lock-sync/executor.md
-                  - atomic: programming/java-advanced/concurrency/lock-sync/atomic.md
-                  - lock:
-                      - 概览: programming/java-advanced/concurrency/lock-sync/lock/index.md
-                      - AQS: programming/java-advanced/concurrency/lock-sync/lock/aqs.md
-                      - AQS 代码注释: programming/java-advanced/concurrency/lock-sync/lock/aqs-code-notes.md
-              - Thread Pool:
-                  - 概览: programming/java-advanced/concurrency/thread-pool/index.md
-                  - Context Switch: programming/java-advanced/concurrency/thread-pool/context-switch.md
-                  - Java 原生可配置线程池和 Spring 的可配置线程池实现的比较: programming/java-advanced/concurrency/thread-pool/threadpool-comparison.md
-                  - Thread: programming/java-advanced/concurrency/thread-pool/thread.md
-                  - ThreadPoolExecutor: programming/java-advanced/concurrency/thread-pool/thread-pool-executor.md
-                  - fork join:
-                      - 概览: programming/java-advanced/concurrency/thread-pool/fork-join/index.md
-                      - work-stealing 工作窃取算法: programming/java-advanced/concurrency/thread-pool/fork-join/work-stealing.md
-                      - 分治法: programming/java-advanced/concurrency/thread-pool/fork-join/divide-conquer.md
-                  - thread pool blocking queue: programming/java-advanced/concurrency/thread-pool/blocking-queue.md
-                  - 线程分配回收策略: programming/java-advanced/concurrency/thread-pool/thread-lifecycle.md
-          - 组件与框架:
-              - 概览: programming/java-advanced/frameworks/index.md
-              - OkHttp: programming/java-advanced/frameworks/okhttp.md
-              - mybatis:
-                  - 概览: programming/java-advanced/frameworks/mybatis/index.md
-                  - mybatis 生成数据库 ID: programming/java-advanced/frameworks/mybatis/generate-db-id.md
-              - mybatis执行: programming/java-advanced/frameworks/mybatis-execution.md
-              - 通用日志框架设计: programming/java-advanced/frameworks/logging-design.md
+      - Java 核心机制:
+          - 概览: programming/core-mechanisms/index.md
+          - JVM 运行时:
+              - 内存区域: programming/core-mechanisms/jvm-memory-and-gc.md
+              - 对象与内存: programming/core-mechanisms/object-and-memory.md
+              - 垃圾回收算法: programming/core-mechanisms/gc-implementation-and-comparison.md
+              - JVM参数调优: programming/core-mechanisms/jvm-tuning.md
+              - 类加载机制: programming/core-mechanisms/class-loading.md
+              - 字节码与执行引擎: programming/core-mechanisms/bytecode-and-execution.md
+              - 拓展篇：GC演化历史: programming/core-mechanisms/gc-evolution-history.md
+          - 异常体系: programming/core-mechanisms/exceptions.md
+          - Java 规范: programming/core-mechanisms/java-specification.md
+          - 反射: programming/core-mechanisms/reflection.md
+          - 动态代理: programming/core-mechanisms/dynamic-proxy.md
+          - SPI 机制: programming/core-mechanisms/spi.md
+      - Java 数据结构:
+          - 概览: programming/data-structures/index.md
+          - HashMap: programming/data-structures/hashmap.md
+          - ConcurrentHashMap: programming/data-structures/concurrent-hashmap.md
+          - 拓展篇：HashMap 源码深度分析: programming/data-structures/hashmap-source-analysis.md
+      - 多线程并发:
+          - 概览: programming/concurrency/index.md
+          - Java 内存模型（JMM）: programming/concurrency/jmm.md
+          - 锁与同步: programming/concurrency/lock.md
+          - 原子类与 CAS: programming/concurrency/atomic.md
+          - 线程基础与上下文切换: programming/concurrency/thread.md
+          - 线程池: programming/concurrency/thread-pool.md
+          - Fork/Join 与工作窃取: programming/concurrency/fork-join.md
+          - CompletableFuture: programming/concurrency/completable-future.md
+      - 组件与框架:
+          - 概览: programming/frameworks/index.md
+          - OkHttp: programming/frameworks/okhttp.md
+          - MyBatis: programming/frameworks/mybatis.md
+          - 拓展篇：MyBatis 执行链路: programming/frameworks/mybatis-execution.md
+          - 拓展篇：MyBatis 生成数据库 ID: programming/frameworks/mybatis-generate-id.md
+          - 日志组件: programming/frameworks/logging.md
   - 操作系统与底层:
       - 概览: os/index.md
       - Linux: os/linux/server-process-thread-model.md
